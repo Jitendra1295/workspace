@@ -9,7 +9,6 @@ declare module 'papaparse' {
             fields: string[];
         };
     }
-
     interface PapaParse {
         parse<T>(input: string | File, config?: ParseConfig): ParseResult<T>;
         unparse<T>(data: T[], config?: UnparseConfig): string;
